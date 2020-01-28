@@ -12,6 +12,14 @@ try {
   };
 }
 
+task("accounts", "Prints the list of accounts", async () => {
+  const accounts = await web3.eth.getAccounts();
+
+  for (const account of accounts) {
+    console.log(account);
+  }
+});
+
 module.exports = {
   solc: {
     version: "0.5.16",
@@ -24,13 +32,24 @@ module.exports = {
     sources: "./contracts/5",
   },
   networks: {
-    mainnet: {
-      url: "https://mainnet.infura.io/v3/7a7dd3472294438eab040845d03c215c",
-      chainId: 1,
+    // mainnet: {
+    //   url: "https://mainnet.infura.io/v3/7a7dd3472294438eab040845d03c215c",
+    //   chainId: 1,
+    //   from: secret.account,
+    //   accounts: {
+    //     mnemonic: secret.mnemonic
+    //   }
+    // },
+    nile: {
+      url: "https://nile.dev-ocean.com/",
+      chainId: 8995,
       from: secret.account,
-      accounts: {
-        mnemonic: secret.mnemonic
-      }
+      // accounts: {
+      //   mnemonic: secret.mnemonic
+      // }
+      accounts: [
+        secret.mnemonic
+      ]
     }
   },
   etherscan: {

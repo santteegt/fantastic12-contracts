@@ -27,3 +27,11 @@ Alternatively, if the squad is working on their own project, they could post bou
 Only if you're technical & know what you're doing. Right now Fantastic12 is only a set of smart contracts.
 
 If you aren't technical, don't worry! A user-friendly dApp for creating & managing your own squad is coming soonish.
+
+## Deployed Contracts
+
+### Nile testnet
+
+* *StandardBounties*: 0x4a8B88f7B95DB9706c2DdaC99fF1410B72ac622a
+* *Fantastic12* Ocean Collective DAO squad: 0x7B6dC213d227570e1802D770Ea4a90EA70cFb303
+
